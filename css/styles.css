@@ -1,0 +1,146 @@
+html {
+    font-size: 95.5%;
+}
+
+.padre {
+    display: grid;
+    grid-template-areas:
+        "nav encabezado"
+        "video";
+}
+
+body {
+    color: aliceblue;
+    background-image: linear-gradient(black 80%, silver);
+    font-family: roboto;
+
+}
+
+@font-face {
+    font-family: roboto;
+    src: url("../fonts/Roboto-BlackItalic.ttf");
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.menulista {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+h1 {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2;
+}
+
+.bio {
+    text-align: justify;
+}
+
+.cajatop {
+    border-style: groove;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.video {
+    display: grid;
+    grid-template-areas:
+        "video";
+    border: solid 5px silver;
+    padding: 10px;
+    border-style: double;
+    border-radius: 15px;
+    margin-left: 370px;
+    margin-right: 370px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.store {
+    display: inline-block;
+}
+
+footer {
+    background-color: silver;
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactflex {
+    display: flex;
+    flex-direction: row;
+}
+
+.remeras {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    font-size: smaller;
+}
+
+.vinilo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    font-size: smaller;
+}
+
+@media (max-width: 768px) {
+    .padre {
+        grid-template-areas:
+            "encabezado"
+            "nav video"
+            "video";
+    }
+
+    h1 {
+        text-align: justify;
+    }
+
+    body {
+        color: aliceblue;
+        background-color: black;
+        font-family: roboto;
+
+    }
+}
+
+@media (max-width: 368px) {
+    .padre {
+        grid-template-areas:
+            "encabezado"
+            "nav video"
+            "video";
+    }
+
+    h1 {
+        text-align: justify;
+    }
+
+    body {
+        color: aliceblue;
+        background-color: black;
+        font-family: roboto;
+
+    }
+}
