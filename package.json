@@ -1,0 +1,25 @@
+{
+  "name": "arcticmonkeys",
+  "version": "1.0.0",
+  "description": "En este proyecto puse aprueba mis conocimientos de html en el desarrollo de una web, inspirada en el grupo musical Arctic Monkeys",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicomlvrz/arcticmonkeys.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicomlvrz/arcticmonkeys/issues"
+  },
+  "homepage": "https://github.com/nicomlvrz/arcticmonkeys#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
