@@ -1,12 +1,10 @@
 html {
-  font-size: 95.5%;
-}
+  font-size: 95.5%; }
 
 body {
   color: aliceblue;
   background-image: linear-gradient(black 80%, silver);
-  font-family: roboto;
-}
+  font-family: roboto; }
 
 .bio {
   background-image: url(../images/fondo.jpg);
@@ -14,33 +12,24 @@ body {
   text-align: center;
   letter-spacing: 1px;
   word-spacing: 5px;
-  text-decoration: solid silver;
-}
+  text-decoration: solid silver; }
 
 @font-face {
   font-family: roboto;
-  src: url("../fonts/Roboto-BlackItalic.ttf");
-}
+  src: url("../fonts/Roboto-BlackItalic.ttf"); }
 
 a {
   text-decoration: none;
-  color: aliceblue;
-}
-
-ul {
-  list-style-type: none;
-}
+  color: aliceblue; }
 
 h1 {
   font-style: italic;
   font-weight: bold;
   text-align: center;
-  line-height: 2;
-}
+  line-height: 2; }
 
 .bio {
-  text-align: justify;
-}
+  text-align: justify; }
 
 .video {
   display: grid;
@@ -53,11 +42,11 @@ h1 {
   margin-right: 370px;
   margin-bottom: 50px;
   margin-top: 50px;
-}
+  width: 590px;
+  height: 345px; }
 
 .store {
-  display: inline-block;
-}
+  display: inline-block; }
 
 footer {
   background-color: silver;
@@ -67,60 +56,51 @@ footer {
   flex-direction: column;
   flex-flow: wrap;
   justify-content: space-between;
-  align-items: center;
-}
+  align-items: center; }
 
 .contactflex {
   display: flex;
-  flex-direction: row;
-}
+  flex-direction: row; }
 
 .remeras {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  font-size: smaller;
-}
+  font-size: smaller; }
 
 .vinilo {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  font-size: smaller;
-}
+  font-size: smaller; }
 
 @media (max-width: 768px) {
   .padre {
-    grid-template-areas: "encabezado"
-      "nav video"
-      "video";
-  }
-
+    grid-template-areas: "encabezado" "nav video" "video"; }
   h1 {
-    text-align: justify;
-  }
-
+    text-align: justify; }
   body {
     color: aliceblue;
     background-color: black;
-    font-family: roboto;
-  }
-}
+    font-family: roboto; } }
 
 @media (max-width: 368px) {
   .padre {
-    grid-template-areas: "encabezado"
-      "nav video"
-      "video";
-  }
-
+    grid-template-areas: "encabezado" "nav video" "video"; }
   h1 {
-    text-align: justify;
-  }
-
+    text-align: justify; }
   body {
     color: aliceblue;
     background-color: black;
-    font-family: roboto;
-  }
-}
+    font-family: roboto; } }
+
+.btn-primary {
+  background-color: black; }
+
+p, ul {
+  background-color: silver;
+  text-align: center;
+  padding: 1rem; }
+
+ul {
+  list-style-type: none; }

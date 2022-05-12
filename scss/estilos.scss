@@ -15,7 +15,7 @@ body {
     letter-spacing: 1px;
     word-spacing: 5px;
     text-decoration: solid silver;
-  }
+}
 
 @font-face {
     font-family: roboto;
@@ -26,11 +26,6 @@ a {
     text-decoration: none;
     color: aliceblue;
 }
-
-ul {
-    list-style-type: none;
-}
-
 
 h1 {
     font-style: italic;
@@ -43,6 +38,10 @@ h1 {
     text-align: justify;
 }
 
+@mixin formatter ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
 
 .video {
     display: grid;
@@ -56,6 +55,7 @@ h1 {
     margin-right: 370px;
     margin-bottom: 50px;
     margin-top: 50px;
+    @include formatter(590px, 345px)
 }
 
 .store {
@@ -130,4 +130,28 @@ footer {
         font-family: roboto;
 
     }
+}
+
+$colores: ("primary": black, "secondary": silver);
+
+@each $name,
+$color in $colores {}
+
+.btn-primary {
+    background-color: black;
+}
+
+$estilos: (color: silver,
+    centro: center,
+    1rem: 1rem);
+
+p {
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+    padding: map-get($estilos, 1rem);
+}
+
+ul {
+    @extend p;
+    list-style-type: none;
 }
