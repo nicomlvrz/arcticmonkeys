@@ -11,10 +11,17 @@ body {
 .bio {
     background-image: url(../images/fondo.jpg);
     background-size: cover;
+    background-position: center;
+    padding: 50px;
+    border: 50px;
     text-align: center;
     letter-spacing: 1px;
-    word-spacing: 5px;
+    word-spacing: 8px;
     text-decoration: solid silver;
+}
+
+.imgbio {
+    margin: 20px;
 }
 
 @font-face {
@@ -141,13 +148,11 @@ $color in $colores {}
     background-color: black;
 }
 
-$estilos: (color: silver,
-    centro: center,
+$estilos: (color: black,
     1rem: 1rem);
 
 p {
     background-color: map-get($estilos, color);
-    text-align: map-get($estilos, centro);
     padding: map-get($estilos, 1rem);
 }
 
